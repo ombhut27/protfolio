@@ -4,7 +4,7 @@ import "../Skill/Skill.scss";
 
 const skills = [
   { name: "HTML5", icon: "https://cdn.simpleicons.org/html5/E34F26" },
-  { name: "/css.png" },
+  { name: "CSS",icon: "/css.png" },
   { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
   { name: "React", icon: "https://cdn.simpleicons.org/react/61DAFB" },
   { name: "Redux", icon: "https://cdn.simpleicons.org/redux/764ABC" },
