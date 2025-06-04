@@ -1,5 +1,6 @@
 @use "../../app.scss";
-@use "../../mixins";
+@use "../../mixins" as *;
+
 .navbar {
   height: 100px;
 
