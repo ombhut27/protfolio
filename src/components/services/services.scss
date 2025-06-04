@@ -1,0 +1,137 @@
+@import "../../app.scss";
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  .header {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 12px;
+
+      b {
+        color: orange;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      color: #bbb;
+      line-height: 1.5;
+    }
+  }
+
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+
+    .serviceCard {
+      background: #1c1c38;
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: orange;
+        color: #111;
+        box-shadow: 0 0 25px rgba(255, 165, 0, 0.8);
+        cursor: pointer;
+
+        button {
+          background: #111;
+          color: orange;
+          border: none;
+        }
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      p {
+        flex-grow: 1;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: inherit;
+      }
+
+      button {
+        align-self: flex-start;
+        padding: 10px 25px;
+        font-weight: 600;
+        background: transparent;
+        border: 2px solid orange;
+        border-radius: 30px;
+        color: orange;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          background: #111;
+          color: orange;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .dotsContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #bbb;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background: orange;
+        box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+      }
+
+      &:hover {
+        background: orange;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 40px 10px;
+
+    .header h1 {
+      font-size: 32px;
+    }
+
+    .header p {
+      font-size: 16px;
+    }
+  }
+}
