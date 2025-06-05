@@ -31,7 +31,7 @@ const experiencesList = [
       "Built scalable web applications and collaborated on UX improvements.",
   },
   {
-    company: "Memo Technolabs",
+    company: "MaMo TechnoLabs",
     role: "MERN Stack Trainee",
     duration: "April 2025 - Present",
     description:
